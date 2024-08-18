@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  color: #787a91;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  font-size: 100%;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.center-content {
+  width: 500px;
+  margin: 70px auto;
+}
+
+.center-content h1 {
+  color: #7a3cdc;
+  font-size: 5em;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.1em;
+  text-transform: uppercase;
+}
+
+/* Customize the label (the container) */
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  height: 18px;
+  width: 18px;
+  background-color: #ddd;
+}
+
+/* On mouse-over, add a grey background color */
+
+.container:hover input~.checkmark {
+  background-color: #aaa;
+}
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked~.checkmark {
+  background-color: #7a3cdc;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+
+.container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 3px;
+  height: 7px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.info {
+  color: #787a9194;
+  font-size: 0.8em;
+  padding-left: 35px;
+}
+
+.btn {
+  text-transform: uppercase;
+  color: #fdffff;
+  background-color: #7a3cdc;
+  border: 1px solid #7a3cdc;
+  outline: 0;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-size: 1.1em;
+  margin-top: 40px;
+  margin-right: 50px;
+  padding: 10px 25px;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background: #af55df;
+  border: 1px solid #af55df;
+}
+
+.submit-btn:active {
+  background: #560eff;
+  border: 1px solid #560eff;
+  padding: 12px 25px 8px;
+}
+
+.submit-btn.inactive {
+  background-color: #ddd;
+  border: 1px solid #ddd;
+}
+
+.copy-btn {
+  padding: 8px 20px 7px 20px;
+  margin-left: -3px;
+  font-size: 0.9em;
+}
+
+.copy-btn:hover {
+  background: #af55df;
+  border: 1px solid #af55df;
+}
+
+.copy-btn:active {
+  background: #560eff;
+  border: 1px solid #560eff;
+  padding: 10px 20px 5px 20px;
+}
+
+.password-result {
+  margin: 55px auto;
+  width: 100%;
+}
+
+.password-result>input[type=text] {
+  background-color: #fdffff;
+  border: 1px solid #ddd;
+  outline: 0;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 1.1em;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.1em;
+  width: 100%;
+}
+
+.password-result>input[type=text]::selection {
+  background: transparent;
+}
+
+.password-result>input[type=text]::-moz-selection {
+  background: transparent;
+}
+
+.password-result>input[type=text]:focus {
+  background: #eee;
+}
