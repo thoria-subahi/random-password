@@ -1,5 +1,7 @@
 # Random Password
 
+https://thoria-subahi.github.io/random-password
+
 This is a simple web-based password generator that allows users to generate random passwords with customizable options. You can select which types of characters to include (uppercase, lowercase, numbers, symbols) and whether to exclude similar characters to enhance security.
 
 ## Features
